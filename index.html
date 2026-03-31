@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2 Puzzle Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <header class="hero">
+        <p class="eyebrow">Project 2</p>
+        <h1>Sliding Puzzle Game</h1>
+        <p class="intro">
+          Arrange the numbered picture tiles from 1 to 15. Click a tile next to the empty space
+          to slide it into place.
+        </p>
+      </header>
+
+      <section class="status" aria-label="Game status">
+        <div class="status-card">
+          <span class="status-label">Moves</span>
+          <strong id="moveCount">0</strong>
+        </div>
+        <div class="status-card">
+          <span class="status-label">Time</span>
+          <strong id="timeElapsed">0s</strong>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Game controls">
+        <button id="newGameBtn" type="button">New Game</button>
+        <button id="simpleGameBtn" type="button">Simple Game</button>
+      </section>
+
+      <p id="message" class="message" aria-live="polite">
+        Start a game and solve the puzzle in the fewest moves possible.
+      </p>
+    </section>
+
+    <section class="board-panel" aria-label="Puzzle board">
+      <table id="board" class="board"></table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
